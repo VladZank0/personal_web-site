@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -18,13 +20,14 @@
 }
  
 .container{
-    width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
 }
 body{
     margin: 0;
     padding: 0;
-    background: #292D38;
+    background: #131313;
+   
 }
 body::-webkit-scrollbar-thumb{
     width: 5px;
@@ -37,9 +40,7 @@ body::-webkit-scrollbar{
     width: 5px;
     background-color: rgb(142, 142, 142);
 }
-.check{
-    height: 2000px;
-}
+ 
 .header{
     font-family: 'Fira Code', monospace;
     color: white;
@@ -155,11 +156,13 @@ p{
     position: sticky;
     display: flex;
     align-items:center;
-    height: 50px;
+    height: 40px;
     background-color: #0D2231;
     width: 100%;
-    top:0px;
+    top:-1px;
     left: 0;
+    margin: 0;
+    z-index: 100;
     
 }
 .navigation_ul{
@@ -174,10 +177,12 @@ p{
     font-size: 15px;
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
 .navigation_ul li a:hover{
     cursor: pointer;
     color: rgb(255, 81, 81);
+    transition: 0.5s;
 }
 .navigation_ul li a:after{
     position: absolute;
@@ -204,3 +209,103 @@ p{
     margin: 0 auto;
     font-family: 'Fira Code', monospace;
 }
+
+
+/*!============ MAIN =============*/
+
+/*?============ ABOUT =============*/
+
+.about {
+}
+.about_wrapper {
+    margin: 0 auto;
+    max-width: 1120px;
+    height: 635px;
+    margin-top: 150px;
+}
+.about_wrapper-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Expletus Sans';
+    letter-spacing: 0.22em;
+    color: #FFFFFF;
+    margin-bottom: 180px;
+}
+.about_wrapper-info {
+    display: flex;
+    flex-direction: row;
+    flex: nowrap;
+    column-gap: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.typing-wrapper{
+    width: 700px;
+}
+.about_wrapper-info-typing{
+    color: red;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Fira Code';
+    animation: typing 10s infinite steps(45,end),
+    cursor 0.6s infinite;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    10%{
+        width: 0px;
+    }
+    50%{
+        width: 100%;
+    }
+
+}
+@keyframes cursor{
+    from,to{
+        border-right: transparent;
+    }
+    50%{
+        border-right: red 2px solid;
+    }
+}
+.about_wrapper-info-text {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Forum';
+    line-height: 36px;
+}
+.about_wrapper-info-avatar {
+    position: relative;
+}
+.about_wrapper-info-avatar::before{
+    content: '';
+    position: absolute;
+    background-image: url("./img/arrow_pointer.svg");
+    width: 60px;
+    height: 61px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 20px;
+    top: -90px;
+}
+.about_wrapper-info-avatar::after{
+    content: '';
+    position: absolute;
+    background-image: url("./img/Yeap..\ it’s\ me.svg");
+    width: 180px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 70px;
+    top: -115px;
+    transform: rotate(5deg);
+}
+ 
