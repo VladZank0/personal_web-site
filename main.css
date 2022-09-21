@@ -242,6 +242,7 @@ p{
 }
 .typing-wrapper{
     width: 700px;
+    margin-bottom:30px;
 }
 .about_wrapper-info-typing{
     color: red;
