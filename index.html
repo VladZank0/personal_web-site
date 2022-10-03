@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <title>Vlad_Zanko | Portfolio</title>
-        <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>Vlad_Zanko|Portfolio</title>
+
+
+    <link rel="stylesheet" href="main.css">
     <link rel="apple-touch-icon"  sizes="57x57" href="./icons/favicon-57x57.png">
     <link rel="apple-touch-icon"  sizes="60x60" href="./icons/favicon-60x60.png">
     <link rel="apple-touch-icon"  sizes="72x72" href="./icons/favicon-72x72.png">
@@ -29,6 +31,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="./wow.min.js"></script>
+    <link rel="stylesheet" href="./fadeBlock.css">
+   
 </head>
 <body>
 
@@ -63,7 +67,7 @@
                 <ul class="navigation_ul">
                     <li class="navigation_ul-link"><a href="https://vk.com/jtaidy">ABOUT</a></li>
                     <li class="navigation_ul-link"><a href="#">PORTFOLIO</a></li>
-                    <li class="navigation_ul-link"><a href="#">MY SKILLS</a></li>
+                    <li class="navigation_ul-link"><a href="#">SMTH ELSE</a></li>
                     <li class="navigation_ul-link"><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -76,24 +80,24 @@
         <section class="about">
             <div class="container">
                 <div class="about_wrapper">
-                    <h1 class="about_wrapper-title ">ABOUT</h1>
+                    <h1 class="about_wrapper-title fadeBottom">ABOUT</h1>
 
-                    <div class="typing-wrapper"> 
+                    <div class="typing-wrapper fadeLeft"> 
                         <p class="about_wrapper-info-typing">Nice to meet you at my site portfolio!</p>
                     </div>
                    
-                    <div  data-wow-duration="2s" class="about_wrapper-info wow animate__animated animate__bounceInLeft">
+                    <div class="about_wrapper-info ">
                        
-                        <p  class="about_wrapper-info-text  ">
+                        <p  class="about_wrapper-info-text fadeLeft">
                             
-                            I’m the beginning front-end developer from Belarus.<br>
-                            I’m really interested in creating UI | UX design, webflow<br>
-                            and generally any areas of graphics and front-end <br>
+                            I’m the beginning front-end developer from Belarus.
+                            I’m really interested in creating UI | UX design, webflow
+                            and generally any areas of graphics and front-end 
                             developing.<br>  
-                            Hope you’ll find smth interesting in my works <br>
+                            Hope you’ll find smth interesting in my works 
                             and wanna work with me on your future web-site. 
                         </p>
-                        <div class="about_wrapper-info-avatar ">
+                        <div data-wow-duration="2s" class="about_wrapper-info-avatar fadeRight">
                             <img src="./img/avatar.svg" alt="Аватарка" class="about_wrapper-info-avatar-img">
                         </div>
 
@@ -101,11 +105,102 @@
                 </div>
             </div>
         </section>
-         
+
+        <section class="skills">
+            <div class="container">
+                <div class="skills_wrapper">
+                    <h1 class="skills_wrapper-title fadeBottom">MY SKILLS</h1>
+                    <div class="skills_wrapper-content ">
+                         <p class="skills_wrapper-content-text fadeBottom"> I can <span>garantee high quality </span> of the <br> project posessing next skills:</p> 
+                    </div>
+
+                    <div class="skills_wrapper-elements">
+
+                       
+                        <div class="skills_wrapper-elements-ROW animate__animated  wow animate__fadeInLeft">
+                            <div class="additional_wrapperForElement">
+                                <div data-wow-delay="0.5s" class="skills_wrapper-elements-ROW-element animate__animated  wow animate__jackInTheBox  HTML ">
+                                    <div class="skills_wrapper-elements-ROW-element-hover HTML ">
+                                        <h1>HTML</h1>
+                                        <p class="skills_wrapper-elements-ROW-element-hover-paragraph">For creating the <span>structure</span> of your web-site</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                        <div class="additional_wrapperForElement"> 
+                            <div data-wow-delay="0.6s" class="skills_wrapper-elements-ROW-element animate__animated animate__jackInTheBox wow   CSS">
+                                <div class="skills_wrapper-elements-ROW-element-hover CSS ">
+                                    <h1>CSS</h1>
+                                    <p class="skills_wrapper-elements-ROW-element-hover-paragraph">Describes HTML document <span>appearance</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="additional_wrapperForElement">
+                            <div data-wow-delay="0.7s" class="skills_wrapper-elements-ROW-element animate__animated animate__jackInTheBox wow  JS">
+                                <div class="skills_wrapper-elements-ROW-element-hover JS">
+                                    <h1>JavaScript</h1>
+                                    <p class="skills_wrapper-elements-ROW-element-hover-paragraph">Programming language that adds <span>interactivity</span> to your website</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
 
 
 
+                    <div data-wow-delay="0.7s" class="skills_wrapper-elements-ROW animate__animated  wow animate__fadeInLeft second">
+                           
+                           
+                        <div class="additional_wrapperForElement">  
+                            <div data-wow-delay="1.2s" class="skills_wrapper-elements-ROW-element animate__animated  wow animate__jackInTheBox jquery">
+                                <div class="skills_wrapper-elements-ROW-element-hover ">
+                                    <h1>JQUERY</h1>
 
+                                </div>
+                            </div>
+                        </div>   
+
+                        <div class="additional_wrapperForElement">  
+                            <div data-wow-delay="1.3s" class="skills_wrapper-elements-ROW-element animate__animated  wow animate__jackInTheBox SCSS">
+                                <div class="skills_wrapper-elements-ROW-element-hover">
+                                    <h1>SCSS</h1>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additional_wrapperForElement">  
+                            <div data-wow-delay="1.4s" class="skills_wrapper-elements-ROW-element animate__animated  wow animate__jackInTheBox PHOTOSHOP">
+                                <div class="skills_wrapper-elements-ROW-element-hover JS">
+                                    <h1>PHOTOSHOP</h1>
+                                    <p class="skills_wrapper-elements-ROW-element-hover-paragraph">Gives the opportunity of <span>editing images</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additional_wrapperForElement">  
+                            <div data-wow-delay="1.5s" class="skills_wrapper-elements-ROW-element animate__animated  wow animate__jackInTheBox FIGMA">
+                                <div class="skills_wrapper-elements-ROW-element-hover JS">
+                                    <h1>FIGMA</h1>
+                                    <p class="skills_wrapper-elements-ROW-element-hover-paragraph">Allows to create <span>web-site design</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <sectoin class="portffolio">
+            
+        </sectoin>
+
+        
     </main>
    
 
@@ -115,6 +210,10 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script src="scroll.js"></script>
+    <script src="./fadeBlock.js"></script>
+    <script>
+        const fadeOptions = new Options(1.5, 100, false);
+    </script>
     <script>
         new WOW().init();
     </script>
