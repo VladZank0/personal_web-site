@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    const slider = $("#slider").owlCarousel({
+        loop:true,
+        margin:50,
+        nav:true,
+        center:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:1
+            },
+            950:{
+                items:3
+            }
+        }
+    });
+});
