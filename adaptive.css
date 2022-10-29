@@ -46,7 +46,7 @@
 @media (max-width:950px){
    
     .about_wrapper{
-        height: 1100px;
+        height: 1000px;
         margin-top: 150px;
     }
     .about_wrapper-info {
@@ -108,8 +108,7 @@
         margin: 0 auto;
     }
     .skills_wrapper {
-        position: relative;
-        height: 880px;
+        height: 940px;
         max-width: 1300px;
     }
 
@@ -136,7 +135,7 @@
         margin: 0 auto;
         margin-bottom: 160px;
     }
-    .burger_btn{
+    .toggle_wrapper{
         
         display: block;
     }
@@ -159,7 +158,7 @@
         
     }
     .skills_wrapper-content p {
-        font-size: 25px;
+        font-size: 28px;
     }
     .skills_wrapper-elements-ROW-element-hover h1 {
         font-size: 18px;
@@ -182,8 +181,10 @@
         column-gap: 25px;
         height: 160px;
     }
-
-
+    .skills_wrapper {
+        height: 869px;
+        max-width: 1300px;
+    }
     .contact_wrapper-info p {
         
         width: 500px;
@@ -195,6 +196,10 @@
         width: 483px;
         font-size: 17px;
     }
+    .about_wrapper-info-text {
+        width: 525px;
+        font-size: 20px;
+    }
     
 }
 
@@ -202,7 +207,6 @@
    
    
     .about_wrapper-info {
-        
         margin: 0 auto;
     }
 }
@@ -259,7 +263,7 @@
         height: 335px;
     }
     .skills_wrapper-content p {
-        font-size: 20px;
+        font-size: 24px;
     }
     .skills_wrapper-elements {
         flex-direction: row;
@@ -278,8 +282,23 @@
     }
 
 }
+@media (max-width:520px){
+    .skills_wrapper {
+        height: 869px;
+    }
+}
 @media (max-width:500px){
-   
+    .about_wrapper{
+        margin-bottom: 100px;
+    }
+
+    .header-innerWrapper-title-first {
+        font-size: 30px;
+    }
+    .header-innerWrapper-title-first-span {
+        font-size: 27px;
+    }
+
     .about_wrapper-info-avatar::after {
         right: -34px;
         top: -36px;
@@ -293,20 +312,15 @@
     }
     .about_wrapper-info-text {
         width: 400px;
-        font-size: 15px;
-        text-align: center;
+        font-size: 18px;
     }
-    .header-innerWrapper-title-first {
-        font-size: 22px;
-    }
-    .header-innerWrapper-title-first-span {
-        font-size: 22px;
-    }
+    
 
 
     /*! skills */
     .skills_wrapper-content p {
         font-size: 18px;
+        font-weight: 500;
     }
     .skills_wrapper-content {
         height: 225px;
@@ -316,9 +330,7 @@
         margin: 0;
     }
     .skills_wrapper {
-        position: relative;
-        height: 725px;
-        max-width: 1300px;
+        height: 790px; 
     }
 
 
@@ -327,6 +339,9 @@
     .portfolio {
         margin-bottom: 10px;
         border: 1px solid transparent;
+    }
+    .slider {
+        margin-bottom: 60px;
     }
     /*!  contact */
 
@@ -354,7 +369,7 @@
         padding-top: 120px;
     }
     .contact {
-        margin-bottom: 110px;
+        margin-bottom: 150px;
     }
 }
 
@@ -368,22 +383,24 @@
         row-gap: 90px;
         padding-top: 120px;
     }
-   
+    .about {
+        margin-bottom: 90px;
+    }
 }
 @media (max-width:430px){
    
    
-    .about_wrapper-info-text {
-        width: 320px;
-        font-size: 13px;
-    }
     .header-innerWrapper-title-second {
         font-weight: 400;
         font-size: 17px;
         margin-bottom: 47px;
         pointer-events: none;
     }
-
+    .about_wrapper-info-text {
+        width: 310px;
+        font-size: 17px;
+        text-align: center;
+    }
       /*! skills */
    
 
@@ -398,34 +415,32 @@
     .skills_wrapper-elements-ROW-element-hover p {
         width: 100px;
     }
+   
     .skills_wrapper-content p {
-        font-size: 20px;
-        width: 275px;
+        font-size: 17px;
+        width: 386px;
     }
-
-
-
 
 }
 
 @media (max-width:375px){
 
- 
-
-
     .header-innerWrapper-title-second {
-        font-size: 13px;
+        font-size: 15px;
+    }.header-innerWrapper-title-first {
+        font-size: 26px;
     }
 
 
      /*! skills */
-    
-    
-    
+     .skills_wrapper-content p {
+        font-size: 17px;
+        width: 260px;
+    }
 }
 
-/* !main  */
-
-
-/*? skills */
-
+@media (max-width:350px){
+    .header-innerWrapper-title-first {
+        font-size: 20px;
+    }
+}
