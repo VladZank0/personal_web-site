@@ -48,25 +48,42 @@
         </div>       
          
     </header>
-    <div class="navigation">
-        <div class="container">
-            <div class="navigation_wrapper">
-                <img src="./img/logo3.svg" width="39px" height="39px" alt="" class="navigation_logo">
-                <ul class="navigation_ul">
-                    <li class="navigation_ul-link"><a href="https://vk.com/jtaidy">ABOUT</a></li>
-                    <li class="navigation_ul-link"><a href="#">PORTFOLIO</a></li>
-                    <li class="navigation_ul-link"><a href="#">SMTH ELSE</a></li>
-                    <li class="navigation_ul-link"><a href="#">CONTACT</a></li>
-                </ul>
-                <div class="burger_btn"></div>
+    
+    <div class="navigationWithMenu">
+        <div class="navigation">
+            <div class="container">
+                <div class="navigation_wrapper">
+                    <img src="./img/logo3.svg" width="39px" height="39px" alt="" class="navigation_logo">
+                    <ul class="navigation_ul">
+                        <li class="navigation_ul-link"><a href="#about">ABOUT</a></li>
+                        <li class="navigation_ul-link"><a href="#skills">MY SKILLS</a></li>
+                        <li class="navigation_ul-link"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li class="navigation_ul-link"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                
+                    <div class="toggle_wrapper">
+                        <div class="toggle"></div>
+                    </div>
+                
+                </div>
+            
             </div>
+        </div>
+
+        <div class="burger_menu">
+            <ul class="navigation_ul burger ">
+                <li class="navigation_ul-link menu_item"><a href="#about">ABOUT</a></li>
+                <li class="navigation_ul-link menu_item"><a href="#skills">MY SKILLS</a></li>
+                <li class="navigation_ul-link menu_item"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="navigation_ul-link menu_item"><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
     </div>
 
 
     <main>
 
-        <section class="about">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="about_wrapper">
                     <h1 class="about_wrapper-title fadeBottom">ABOUT</h1>
@@ -95,7 +112,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills section" id="skills">
             <div class="container">
                 <div class="skills_wrapperFormargin">
 
@@ -189,7 +206,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio section" id="portfolio">
             <div class="container">
                 <div class="portfolio_wrapper">
 
@@ -210,7 +227,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="contact_wrapper">
                     <h1 class="contact_wrapper-title">CONTACT ME</h1>
@@ -273,8 +290,6 @@
 
     </footer>
 
-   
-   
     <script src="scroll.js"></script>
     <script src="./fadeBlock.js"></script>
     <script>
@@ -285,9 +300,11 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="slider.js"></script>
     <script src="buttonUP.js"></script>
+    <script src="burger_menu.js"></script>
+    <script src="smooth_scroll.js"></script>
+    <script src="nav_elem-highlight.js"></script>
 </body>
 </html>
 
